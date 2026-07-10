@@ -10,13 +10,13 @@
 [![DoubleML](https://img.shields.io/badge/DoubleML-FF6F00?style=for-the-badge)](https://docs.doubleml.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jonarordonez-spec/texas-oil-gas-analytics/pulls)
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/jonarordonez-spec/texas-oil-analytics/pulls)
 
 </div>
 
 ---
 
-## 📊 **Project Overview**
+## 📊 Project Overview
 
 > A production-grade data engineering and causal inference project analyzing **31.9 million observations** from the Texas Railroad Commission (RRC) to estimate the causal effect of oil prices on production.
 
@@ -30,7 +30,7 @@
 
 ---
 
-## 🎯 **Key Results at a Glance**
+## 🎯 Key Results at a Glance
 
 <div align="center">
 
@@ -47,7 +47,7 @@
 
 ---
 
-## 📊 **Causal Effect Visualization**
+## 📊 Causal Effect Visualization
 
 <div align="center">
 
@@ -59,33 +59,25 @@
 
 ---
 
-## 🏗️ **Architecture**
+## 🏗️ Architecture
 
 ### Medallion Architecture
 
 ```mermaid
 graph LR
-    A[📦 BRONZE<br/>Raw .dsv → Parquet] --> B[🧹 SILVER<br/>Cleaning & Feature Engineering]
-    B --> C[🏆 GOLD<br/>Aggregations & Modeling Sample]
+    A["BRONZE<br/>Raw .dsv → Parquet"] --> B["SILVER<br/>Cleaning & Feature Engineering"]
+    B --> C["GOLD<br/>Aggregations & Modeling Sample"]
     
-    A --> D[(💾 Parquet)]
-    B --> E[(💾 Parquet + DuckDB)]
-    C --> F[(💾 Parquet + DuckDB + PostgreSQL)]
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#ccf,stroke:#333,stroke-width:2px
-    style C fill:#cfc,stroke:#333,stroke-width:2px
-
-### The 5 Keys Framework
-
-| # | Key | Description |
-|---|-----|-------------|
-| **1** | **CONNECT** | RRC .dsv files + EIA WTI prices |
-| **2** | **BUFFER** | Raw data stored as Parquet (Bronze) |
-| **3** | **PROCESS** | Cleaning + Feature Engineering (Silver + Gold) |
-| **4** | **STORE** | PostgreSQL with indexes and views |
-| **5** | **VISUALIZE** | Interactive charts and dashboards |
-
+    A --> D[Parquet]
+    B --> E["Parquet + DuckDB"]
+    C --> F["Parquet + DuckDB + PostgreSQL"]
+The 5 Keys Framework
+#	Key	Description
+1	CONNECT	RRC .dsv files + EIA WTI prices
+2	BUFFER	Raw data stored as Parquet (Bronze)
+3	PROCESS	Cleaning + Feature Engineering (Silver + Gold)
+4	STORE	PostgreSQL with indexes and views
+5	VISUALIZE	Interactive charts and dashboards
 🛠️ Tech Stack
 <div align="center">
 Layer	Technology	Purpose
@@ -97,8 +89,8 @@ Layer	Technology	Purpose
 📈 Visualization	Plotly, Matplotlib, Seaborn	Interactive dashboards
 🐳 Container	Docker	PostgreSQL containerization
 </div>
-
 📁 Project Structure
+text
 texas-oil-gas-analytics/
 ├── 📁 src/                     # Source code
 │   ├── ⚙️ config.py            # Centralized configuration
@@ -123,16 +115,16 @@ texas-oil-gas-analytics/
 ├── 📄 .gitignore
 ├── 📄 README.md
 ├── 📄 requirements.txt
-└── 📓 01_texas_oil_causal_analysis.ipynb
-
+└── 📓 01_texas_oil_causal_analysis_final.ipynb
 🚀 Quick Start
 Prerequisites
+text
 Python 3.9+  |  Docker (optional)  |  16GB+ RAM  |  Git
-
 Installation
+bash
 # Clone repository
-git clone https://github.com/jonarordonez-spec/texas-oil-gas-analytics.git
-cd texas-oil-gas-analytics
+git clone https://github.com/jonarordonez-spec/texas-oil-analytics.git
+cd texas-oil-analytics
 
 # Create virtual environment
 python -m venv venv
@@ -140,23 +132,22 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-
 Run the Analysis
+bash
 # Run the full analysis
 jupyter notebook 01_texas_oil_causal_analysis_final.ipynb
 
 # Or run specific components
 python -c "from src.pipeline import run_full_pipeline; run_full_pipeline()"
 python -c "from src.analysis.causal_models import run_full_causal_analysis; run_full_causal_analysis()"
-
 Launch Dashboard
+bash
 # Windows
 run_dashboard.bat
 
 # Or directly
-python app.py
-
-Open your browser at http://localhost:8050 
+python dashboard\app.py
+Open your browser at http://localhost:8050 🎉
 
 📊 Methodology
 Research Design
@@ -171,7 +162,6 @@ Issue	OLS	Double ML
 🔴 Confounding bias	❌ Sensitive	✅ Robust via ML
 🔴 Non-linear relationships	❌ Linear only	✅ Flexible ML
 🔴 Causal interpretation	❌ Correlational	✅ Causal
-
 📚 References
 Chernozhukov, V., et al. (2018). "Double/Debiased Machine Learning for Treatment and Causal Parameters." The Econometrics Journal, 21(1), C1-C68.
 
@@ -194,7 +184,6 @@ https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoC
 https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
 
 </div>
-
 📄 License
 MIT © Jonathan Ruiz Ordoñez
 
