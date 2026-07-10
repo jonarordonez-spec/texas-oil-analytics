@@ -221,7 +221,7 @@ Open your browser at **`http://localhost:8050`**
 **Jonathan Ruiz Ordoñez**
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jonarordonez-spec)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonathan-ruiz-ordonez-001673233/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://https://www.linkedin.com/in/jonathanruizordo%C3%B1ez/)
 
 </div>
 
