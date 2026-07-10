@@ -1,0 +1,59 @@
+table_name,column_name,data_type,business_description
+gold_monthly_district,DISTRICT_NO,VARCHAR,Other / Flag / Code
+gold_monthly_district,DISTRICT_NAME,VARCHAR,Descriptive name
+gold_monthly_district,cycle_date,DATE,Other / Flag / Code
+gold_monthly_district,year,BIGINT,Other / Flag / Code
+gold_monthly_district,month,BIGINT,Other / Flag / Code
+gold_monthly_district,num_leases,BIGINT,Other / Flag / Code
+gold_monthly_district,total_liquid_prod,HUGEINT,Other / Flag / Code
+gold_monthly_district,total_gas_prod,HUGEINT,Other / Flag / Code
+gold_monthly_district,total_prod_boe,DOUBLE,Other / Flag / Code
+gold_monthly_district,avg_prod_boe_per_lease,DOUBLE,Other / Flag / Code
+gold_monthly_district,active_leases,HUGEINT,Other / Flag / Code
+gold_monthly_operator,OPERATOR_NO,VARCHAR,Unique identifier
+gold_monthly_operator,OPERATOR_NAME,VARCHAR,Descriptive name
+gold_monthly_operator,cycle_date,DATE,Other / Flag / Code
+gold_monthly_operator,total_liquid_prod,HUGEINT,Other / Flag / Code
+gold_monthly_operator,total_gas_prod,HUGEINT,Other / Flag / Code
+gold_monthly_operator,total_prod_boe,DOUBLE,Other / Flag / Code
+gold_monthly_operator,num_leases,BIGINT,Other / Flag / Code
+lease_cycle_silver,OIL_GAS_CODE,VARCHAR,Other / Flag / Code
+lease_cycle_silver,DISTRICT_NO,VARCHAR,Other / Flag / Code
+lease_cycle_silver,LEASE_NO,VARCHAR,Unique identifier
+lease_cycle_silver,CYCLE_YEAR,BIGINT,Date field
+lease_cycle_silver,CYCLE_MONTH,VARCHAR,Date field
+lease_cycle_silver,CYCLE_YEAR_MONTH,BIGINT,Date field
+lease_cycle_silver,LEASE_NO_DISTRICT_NO,BIGINT,Other / Flag / Code
+lease_cycle_silver,OPERATOR_NO,VARCHAR,Unique identifier
+lease_cycle_silver,FIELD_NO,VARCHAR,Unique identifier
+lease_cycle_silver,FIELD_TYPE,VARCHAR,Other / Flag / Code
+lease_cycle_silver,GAS_WELL_NO,VARCHAR,Other / Flag / Code
+lease_cycle_silver,PROD_REPORT_FILED_FLAG,VARCHAR,Production volume
+lease_cycle_silver,LEASE_OIL_PROD_VOL,BIGINT,Production volume
+lease_cycle_silver,LEASE_OIL_ALLOW,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_OIL_ENDING_BAL,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_GAS_PROD_VOL,BIGINT,Production volume
+lease_cycle_silver,LEASE_GAS_ALLOW,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_GAS_LIFT_INJ_VOL,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_COND_PROD_VOL,BIGINT,Production volume
+lease_cycle_silver,LEASE_COND_LIMIT,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_COND_ENDING_BAL,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_CSGD_PROD_VOL,BIGINT,Production volume
+lease_cycle_silver,LEASE_CSGD_LIMIT,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_CSGD_GAS_LIFT,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_OIL_TOT_DISP,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_GAS_TOT_DISP,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_COND_TOT_DISP,BIGINT,Other / Flag / Code
+lease_cycle_silver,LEASE_CSGD_TOT_DISP,BIGINT,Other / Flag / Code
+lease_cycle_silver,DISTRICT_NAME,VARCHAR,Descriptive name
+lease_cycle_silver,LEASE_NAME,VARCHAR,Descriptive name
+lease_cycle_silver,OPERATOR_NAME,VARCHAR,Descriptive name
+lease_cycle_silver,FIELD_NAME,VARCHAR,Descriptive name
+lease_cycle_silver,cycle_date,DATE,Other / Flag / Code
+lease_cycle_silver,total_liquid_prod,BIGINT,Other / Flag / Code
+lease_cycle_silver,total_gas_prod,BIGINT,Other / Flag / Code
+lease_cycle_silver,total_csgd_prod,BIGINT,Other / Flag / Code
+lease_cycle_silver,total_prod_boe,DOUBLE,Other / Flag / Code
+lease_cycle_silver,is_active_producing,BOOLEAN,Other / Flag / Code
+lease_cycle_silver,oil_gas_code_std,VARCHAR,Other / Flag / Code
+lease_cycle_silver,district_name_std,VARCHAR,Other / Flag / Code

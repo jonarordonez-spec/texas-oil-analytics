@@ -1,0 +1,41 @@
+column_name,data_type,description,table_name
+OIL_GAS_CODE,VARCHAR,Other,lease_cycle_silver
+DISTRICT_NO,VARCHAR,Other,lease_cycle_silver
+LEASE_NO,VARCHAR,Unique identifier,lease_cycle_silver
+CYCLE_YEAR,BIGINT,Other,lease_cycle_silver
+CYCLE_MONTH,VARCHAR,Other,lease_cycle_silver
+CYCLE_YEAR_MONTH,BIGINT,Other,lease_cycle_silver
+LEASE_NO_DISTRICT_NO,BIGINT,Other,lease_cycle_silver
+OPERATOR_NO,VARCHAR,Unique identifier,lease_cycle_silver
+FIELD_NO,VARCHAR,Other,lease_cycle_silver
+FIELD_TYPE,VARCHAR,Other,lease_cycle_silver
+GAS_WELL_NO,VARCHAR,Other,lease_cycle_silver
+PROD_REPORT_FILED_FLAG,VARCHAR,Other,lease_cycle_silver
+LEASE_OIL_PROD_VOL,BIGINT,Production volume in barrels or MCF,lease_cycle_silver
+LEASE_OIL_ALLOW,BIGINT,Other,lease_cycle_silver
+LEASE_OIL_ENDING_BAL,BIGINT,Other,lease_cycle_silver
+LEASE_GAS_PROD_VOL,BIGINT,Production volume in barrels or MCF,lease_cycle_silver
+LEASE_GAS_ALLOW,BIGINT,Other,lease_cycle_silver
+LEASE_GAS_LIFT_INJ_VOL,BIGINT,Other,lease_cycle_silver
+LEASE_COND_PROD_VOL,BIGINT,Production volume in barrels or MCF,lease_cycle_silver
+LEASE_COND_LIMIT,BIGINT,Other,lease_cycle_silver
+LEASE_COND_ENDING_BAL,BIGINT,Other,lease_cycle_silver
+LEASE_CSGD_PROD_VOL,BIGINT,Production volume in barrels or MCF,lease_cycle_silver
+LEASE_CSGD_LIMIT,BIGINT,Other,lease_cycle_silver
+LEASE_CSGD_GAS_LIFT,BIGINT,Other,lease_cycle_silver
+LEASE_OIL_TOT_DISP,BIGINT,Other,lease_cycle_silver
+LEASE_GAS_TOT_DISP,BIGINT,Other,lease_cycle_silver
+LEASE_COND_TOT_DISP,BIGINT,Other,lease_cycle_silver
+LEASE_CSGD_TOT_DISP,BIGINT,Other,lease_cycle_silver
+DISTRICT_NAME,VARCHAR,Other,lease_cycle_silver
+LEASE_NAME,VARCHAR,Other,lease_cycle_silver
+OPERATOR_NAME,VARCHAR,Other,lease_cycle_silver
+FIELD_NAME,VARCHAR,Other,lease_cycle_silver
+cycle_date,DATE,Other,lease_cycle_silver
+total_liquid_prod,BIGINT,Other,lease_cycle_silver
+total_gas_prod,BIGINT,Other,lease_cycle_silver
+total_csgd_prod,BIGINT,Other,lease_cycle_silver
+total_prod_boe,DOUBLE,Other,lease_cycle_silver
+is_active_producing,BOOLEAN,Other,lease_cycle_silver
+oil_gas_code_std,VARCHAR,Other,lease_cycle_silver
+district_name_std,VARCHAR,Other,lease_cycle_silver
