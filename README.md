@@ -77,31 +77,30 @@
 
 ## 📁 Project Structure
 
-texas-oil-gas-analytics/
-├── 📁 src/                     # Source code
-│   ├── ⚙️ config.py            # Centralized configuration
-│   ├── 🗄️ database.py          # DuckDB + PostgreSQL connections
-│   ├── 🔄 pipeline.py          # Main orchestrator
-│   ├── 📁 etl/                 # ETL pipeline
-│   │   ├── bronze.py           # Raw data ingestion
-│   │   ├── silver.py           # Data cleaning & transformation
-│   │   └── gold.py             # Aggregations & feature engineering
-│   └── 📁 analysis/            # Causal analysis
-│       └── causal_models.py    # Double ML, OLS, robustness checks
-├── 📁 dashboard/               # Interactive dashboard
-│   ├── app.py                  # Dash application
-│   └── pages/                  # Multi-page layout
-├── 📁 data/                    # Data layers
-│   ├── 📁 bronze/              # Raw data in Parquet
-│   ├── 📁 silver/              # Cleaned data
-│   └── 📁 gold/                # Aggregations & modeling sample
-├── 📁 docs/                    # Documentation
-├── 📁 outputs/                 # Generated reports
-├── 📁 logs/                    # Structured logs
-├── 📄 .gitignore
-├── 📄 README.md
-├── 📄 requirements.txt
-└── 📓 01_texas_oil_causal_analysis_final.ipynb
+```
+texas-oil-analytics/
+├── src/                     # Source code
+│   ├── config.py            # Centralized configuration
+│   ├── database.py          # DuckDB + PostgreSQL connections
+│   ├── pipeline.py          # Main orchestrator
+│   ├── etl/                 # ETL pipeline
+│   │   ├── bronze.py        # Raw data ingestion
+│   │   ├── silver.py        # Data cleaning & transformation
+│   │   └── gold.py          # Aggregations & feature engineering
+│   └── analysis/            # Causal analysis
+│       └── causal_models.py # Double ML, OLS, robustness checks
+├── dashboard/               # Interactive dashboard
+│   ├── app.py               # Dash application
+│   └── pages/               # Multi-page layout
+├── data/                    # Data layers
+├── docs/                    # Documentation
+├── outputs/                 # Generated reports
+├── logs/                    # Structured logs
+├── .gitignore
+├── README.md
+├── requirements.txt
+└── 01_texas_oil_causal_analysis_final.ipynb
+```
 
 ---
 
@@ -126,27 +125,30 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
----
+### Run the Analysis
 
-## Run the Analysis
-
+```bash
 # Run the full analysis
 jupyter notebook 01_texas_oil_causal_analysis_final.ipynb
 
 # Or run specific components
 python -c "from src.pipeline import run_full_pipeline; run_full_pipeline()"
 python -c "from src.analysis.causal_models import run_full_causal_analysis; run_full_causal_analysis()"
+```
 
-## Launch Dashboard
+### Launch Dashboard
 
+```bash
 # Windows
 run_dashboard.bat
 
 # Or directly
 python dashboard/app.py
+```
 
-Open your browser at http://localhost:8050
+Open your browser at **`http://localhost:8050`**
 
 ---
 
@@ -195,25 +197,19 @@ Open your browser at http://localhost:8050
 ### Academic References
 
 - Chernozhukov, V., et al. (2018). "Double/Debiased Machine Learning for Treatment and Causal Parameters." *The Econometrics Journal*, 21(1), C1-C68.
-
 - Hamilton, J. D. (2009). "Causes and Consequences of the Oil Shock of 2007-08." *Brookings Papers on Economic Activity*.
-
 - Kilian, L. (2009). "Not All Oil Price Shocks Are Alike." *American Economic Review*, 99(3), 1053-1069.
 
 ### Data Sources
 
 - **Texas Railroad Commission (RRC)**. Production Data Query.
-
 - **U.S. Energy Information Administration (EIA)**. WTI Crude Oil Prices.
-
 - **Federal Reserve Economic Data (FRED)**. WTI Spot Price.
 
 ### Software
 
 - **DoubleML** Documentation. https://docs.doubleml.org
-
 - **DuckDB** Documentation. https://duckdb.org/docs
-
 - **Statsmodels** Documentation. https://www.statsmodels.org
 
 ---
@@ -226,5 +222,19 @@ Open your browser at http://localhost:8050
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jonarordonez-spec)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jonathan-ruiz-ordonez-001673233/)
+
+</div>
+
+---
+
+## 📄 License
+
+MIT © Jonathan Ruiz Ordoñez
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, please consider starring the repository!
 
 </div>
